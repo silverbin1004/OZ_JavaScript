@@ -59,28 +59,28 @@
 // const fruits = ["Apple", "Banana", "Orange"];
 // console.log(fruits[1]);
 
-// 9. numbers 배열에 숫자 5를 추가해보세요.
+// 9. numbers 배열에 숫자 5를 추가해보세요.(push)
 // const numbers = [1, 2, 3, 4];
 
 // numbers.push(5);
 
 // console.log(numbers);
 
-// 10. colors 배열에서 마지막 요소를 제거하세요.
-// const color = ["Red", "Green", "Blue"];
+// 10. colors 배열에서 마지막 요소를 제거하세요.(pop)
+// const colors = ["Red", "Green", "Blue"];
 
-// color.pop();
+// colors.pop();
 
-// console.log(color);
+// console.log(colors);
 
-// 11. days 배열의 첫 번째 요소를 제거하세요.
+// 11. days 배열의 첫 번째 요소를 제거하세요.(shift)
 // const days = ["Monday", "Tuesday", "Wednesday"];
 
 // days.shift();
 
 // console.log(days);
 
-// 12. names 배열의 맨 앞에 "Alice"를 추가하세요.
+// 12. names 배열의 맨 앞에 "Alice"를 추가하세요.(unshift)
 // const names = ["Bob", "Charlie"];
 
 // names.unshift("Alice");
@@ -94,11 +94,11 @@
 //     console.log(num);
 // });
 
-// 14. numbers 배열의 각 요소를 2배로 변환한 새로운 배열을 만드세요.
+// 14. numbers 배열의 각 요소를 2배로 변환한 새로운 배열을 만드세요.(map)
 // const numbers = [1, 2, 3, 4];
 
 // const numbers2 = numbers.map(function(num){
-//     return num ** 2;
+//     return num * 2;
 // });
 
 // console.log(numbers2);
@@ -112,7 +112,7 @@
 
 // console.log(adults);
 
-// 16. prices 배열의 합계를 구하세요.
+// 16. prices 배열의 합계를 구하세요.(reduce)
 // const prices = [10, 20, 30, 40];
 
 // const add = prices.reduce(function(total,prices){
@@ -121,7 +121,7 @@
 
 // console.log(add);
 
-// 17. 아래 배열에 "Banana"가 포함되어 있는지 확인하세요.
+// 17. 아래 배열에 "Banana"가 포함되어 있는지 확인하세요.(includes)
 //const fruits = ["Apple", "Orange", "Grapes"];
 
 // console.log(fruits.includes("Banana"));
@@ -130,6 +130,10 @@
 // const numbers = [5, 2, 8, 1, 3];
 
 // console.log(numbers.sort());
+
+// numbers2.sort(function(a,b){
+//     return a - b;
+// });
 
 // 19. letters 배열을 뒤집어보세요.
 // const letters = ["a", "b", "c", "d"];
@@ -140,6 +144,7 @@
 
 // 20. animals 배열에서 첫 번째와 두 번째 요소를 잘라내어 새로운 배열을 만드세요.
 // const animals = ["Cat", "Dog", "Elephant", "Lion"];
+
 
 // console.log(animals.slice(2,4));
 
@@ -191,11 +196,11 @@
 // console.log(older);
 
 // 26. 아래 배열에 중복된 값이 있는지 확인하는 코드를 작성하세요.
-const numbers = [1, 2, 3, 4, 2, 5];
+// const numbers = [1, 2, 3, 4, 2, 5];
 
-const result = [...new Set(numbers.filter((item, index) => numbers.indexOf(item) !== index))];
+// const result = [...new Set(numbers.filter((item, index) => numbers.indexOf(item) !== index))];
 
-console.log(result);
+// console.log(result);
 
 // 27. 아래 배열을 나이(age)를 기준으로 오름차순 정렬하세요.
 // const people = [
@@ -212,10 +217,17 @@ console.log(result);
 
 // console.log(arr_age);
 
+//방법2
+// const arr_age1 = new_age.sort(function(a1,b1){
+//     return a1.age - b1.age;
+// })
+
+// console.log(arr_age1);
+
 // 28. ages 배열에서 21세 이상의 요소의 인덱스를 찾으세요.(findIndex)
 // const ages = [16, 18, 22, 20];
 
-// const find_index = ages.findIndex(num=>num>21);
+// const find_index = ages.findIndex(num=>num>=21);
 
 // console.log(find_index);
 
@@ -237,3 +249,4 @@ console.log(result);
 // const nestedArray = [[1,2],[3,4],[5,[6,7]]];
 
 // console.log(nestedArray.flat(2));
+
