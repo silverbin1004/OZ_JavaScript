@@ -50,7 +50,7 @@
 // ]
 
 // const adults = people.filter(function(peoples){
-//     return peoples.age > 18;
+//     return peoples.age >= 18;
 // })
 // console.log(adults);
 
@@ -131,7 +131,7 @@
 
 // console.log(numbers.sort());
 
-// numbers2.sort(function(a,b){
+// numbers.sort(function(a,b){
 //     return a - b;
 // });
 
